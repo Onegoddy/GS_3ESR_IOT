@@ -1,4 +1,5 @@
 ```markdown
+```
 # PowerCast Vision - Detecção com Alerta
 
 ## :movie_camera: Demonstração
@@ -24,7 +25,7 @@ O **PowerCast Vision** é um sistema de visão computacional que utiliza a bibli
 ---
 
 ## :seedling: Instruções de uso
-
+```
 1. Instale o **[Anaconda](https://www.anaconda.com/download)** (caso ainda não tenha).
 2. Abra o **Anaconda Prompt (`cmd.exe`)**.
 3. Crie e ative um ambiente virtual (opcional, mas recomendado):
