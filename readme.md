@@ -40,10 +40,7 @@ O **PowerCast Vision** é um sistema de visão computacional que utiliza a bibli
 5. Certifique-se de que:
    - O arquivo de som `alerta.mp3` esteja na mesma pasta do script.
    - (Opcional) Uma imagem PNG com transparência chamada `alerta_visual.png` esteja na pasta para exibição no alerta.
-6. Abra o **Visual Studio Code pelo Anaconda Navigator** ou via terminal com:
-   ```bash
-   code .
-   ```
+6. Abra o **Visual Studio Code pelo Anaconda Navigator** ou via terminal.
 7. Execute o script Python no Visual Studio Code com o ambiente ativado.
 
 ---
