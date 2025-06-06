@@ -46,7 +46,7 @@ Quando uma dessas situações é detectada, o sistema:
    ```bash
    pip install opencv-python mediapipe pygame numpy
    ```
-4. Coloque os arquivos `alerta.mp3` e (opcional) `alerta_visual.png` na mesma pasta do script.
+4. Coloque o arquivo `alerta.mp3` na mesma pasta do script.
 5. Execute o arquivo `app.py` com o ambiente ativado.
 
 ---
