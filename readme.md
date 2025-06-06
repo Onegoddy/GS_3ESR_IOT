@@ -22,7 +22,7 @@ O **PowerCast Vision** é uma solução desenvolvida com **Python e MediaPipe**,
 Quando uma dessas situações é detectada, o sistema:
 
 - 🔊 Emite um alerta sonoro
-- 🖼️ Exibe uma imagem de aviso na tela
+- 🖼️ Alerta visual na tela
 - 📝 Registra o evento em um log com **data, hora e tipo de alerta**
 
 ### 🧪 Tecnologias utilizadas:
@@ -47,7 +47,7 @@ Quando uma dessas situações é detectada, o sistema:
    pip install opencv-python mediapipe pygame numpy
    ```
 4. Coloque os arquivos `alerta.mp3` e (opcional) `alerta_visual.png` na mesma pasta do script.
-5. Execute o arquivo `powercast_vision.py` com o ambiente ativado.
+5. Execute o arquivo `app.py` com o ambiente ativado.
 
 ---
 
@@ -55,10 +55,9 @@ Quando uma dessas situações é detectada, o sistema:
 
 > Todo o código está disponível neste repositório, no arquivo principal:
 
-- `powercast_vision.py` – script que executa o sistema completo
+- `app.py` – script que executa o sistema completo
 - `eventos_log.txt` – arquivo de log que será criado automaticamente ao rodar o sistema
 - `alerta.mp3` – som tocado ao detectar risco
-- `alerta_visual.png` (opcional) – imagem exibida no alerta
 
 ---
 
