@@ -1,85 +1,77 @@
 ```markdown
 ```
-# PowerCast Vision - Detecção com Alerta
+# PowerCast Vision - Detecção de Falta de Energia com IA
+
+---
 
 ## :movie_camera: Demonstração
 * https://youtu.be/JmDAU5d6SSM
 
 ---
 
-## :memo: Descrição do projeto
+## :warning: Descrição do problema
 
-O **PowerCast Vision** é um sistema de visão computacional que utiliza a biblioteca **MediaPipe** para detectar movimentos humanos (levantamento dos braços) e monitora a **luminosidade ambiente** via webcam. Quando é detectado um ambiente escuro ou uma movimentação específica (ambos os braços levantados), o sistema **aciona um alerta sonoro**, exibe uma **mensagem de aviso na tela**, e **registra o evento em um arquivo de log** com data, hora e tipo de alerta.
-
----
-
-## :books: Funcionalidades
-
-- 🎯 **Detecção de movimento humano** (levantamento dos dois braços).
-- 🌑 **Monitoramento de luminosidade** com base no brilho médio da imagem.
-- 🔊 **Alerta sonoro automático** quando o ambiente estiver escuro ou quando o usuário levantar os dois braços.
-- 🖼️ **Mensagem de alerta visual** e sobreposição de imagem na tela da câmera.
-- 📊 **Exibição do nível de brilho atual** (útil para debug e testes).
-- 📝 **Geração de log de eventos** em `eventos_log.txt` com data, hora e motivo do alerta.
+Durante uma queda de energia, ambientes como **hospitais, residências de idosos, creches e centros de dados** ficam altamente vulneráveis. A ausência de iluminação pode levar a **acidentes**, como quedas, confusões ou movimentos de risco.  
+Além disso, identificar e reagir rapidamente a essas situações de emergência é um desafio — principalmente sem sensores físicos ou sistemas especializados.
 
 ---
 
-## :seedling: Instruções de uso
+## :bulb: Visão geral da solução
 
-1. Instale o **[Anaconda](https://www.anaconda.com/download)** (caso ainda não tenha).
-2. Abra o **Anaconda Prompt (`cmd.exe`)**.
-3. Crie e ative um ambiente virtual (opcional, mas recomendado):
+O **PowerCast Vision** é uma solução desenvolvida com **Python e MediaPipe**, que **detecta movimentos humanos suspeitos** (como levantar os dois braços pedindo ajuda) e **identifica ambientes escuros** por meio de visão computacional.  
+Quando uma dessas situações é detectada, o sistema:
+
+- 🔊 Emite um alerta sonoro
+- 🖼️ Exibe uma imagem de aviso na tela
+- 📝 Registra o evento em um log com **data, hora e tipo de alerta**
+
+### 🧪 Tecnologias utilizadas:
+- `MediaPipe` para detecção de gestos e poses humanas
+- `OpenCV` para captura de vídeo e análise de brilho
+- `Pygame` para reprodução de som
+- `NumPy` para cálculos de brilho
+- `Datetime` para registro em log
+
+---
+
+## :gear: Instruções de uso
+
+1. Instale o [Anaconda](https://www.anaconda.com/download) (recomendado).
+2. Crie e ative um ambiente virtual:
    ```bash
    conda create -n powercast python=3.9
    conda activate powercast
    ```
-4. Instale as dependências:
+3. Instale as dependências:
    ```bash
    pip install opencv-python mediapipe pygame numpy
    ```
-5. Certifique-se de que:
-   - O arquivo de som `alerta.mp3` esteja na mesma pasta do script.
-   - (Opcional) Uma imagem PNG com transparência chamada `alerta_visual.png` esteja na pasta para exibição no alerta.
-6. Abra o **Visual Studio Code pelo Anaconda Navigator** ou via terminal.
-7. Execute o script Python no Visual Studio Code com o ambiente ativado.
+4. Coloque os arquivos `alerta.mp3` e (opcional) `alerta_visual.png` na mesma pasta do script.
+5. Execute o arquivo `powercast_vision.py` com o ambiente ativado.
 
 ---
 
-## :clipboard: Requisitos
+## :tv: Link do vídeo demonstrativo
 
-- Anaconda com Python 3.7+
-- Webcam funcional
-- Arquivo de som `alerta.mp3`
-- (Opcional) Arquivo `alerta_visual.png` para visualização gráfica no alerta
-- Sistema operacional compatível com `pygame` (Windows recomendado)
+> 📽️ Em breve será adicionado aqui.
 
 ---
 
-## :hammer: Dependências
+## :file_folder: Código Fonte
 
-- `opencv-python`: Captura e processamento de vídeo.
-- `mediapipe`: Detecção de poses humanas.
-- `pygame`: Reprodução de som de alerta.
-- `numpy`: Cálculo de brilho da imagem.
-- `datetime`: Registro de hora dos eventos.
+> Todo o código está disponível neste repositório, no arquivo principal:
 
----
-
-## :wrench: Tecnologias utilizadas
-
-- Python
-- OpenCV
-- MediaPipe
-- Pygame
-- NumPy
-- Anaconda
-- Visual Studio Code
+- `powercast_vision.py` – script que executa o sistema completo
+- `eventos_log.txt` – arquivo de log que será criado automaticamente ao rodar o sistema
+- `alerta.mp3` – som tocado ao detectar risco
+- `alerta_visual.png` (opcional) – imagem exibida no alerta
 
 ---
 
-## :handshake: Colaboradores
+## 👥 Integrantes
 
-- João Pedro Marques Rodrigues - RM98307  
-- Kayky Paschoal Ribeiro - RM99929  
-- Natan Eguchi dos Santos - RM98720
+- João Pedro Marques Rodrigues – RM98307  
+- Kayky Paschoal Ribeiro – RM99929  
+- Natan Eguchi dos Santos – RM98720
 ```
+
