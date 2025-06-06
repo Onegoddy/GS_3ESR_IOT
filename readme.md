@@ -4,7 +4,7 @@
 
 ---
 
-## :movie_camera: Demonstração
+## :movie_camera: Vídeo de demonstração
 * https://youtu.be/JmDAU5d6SSM
 
 ---
@@ -48,12 +48,6 @@ Quando uma dessas situações é detectada, o sistema:
    ```
 4. Coloque os arquivos `alerta.mp3` e (opcional) `alerta_visual.png` na mesma pasta do script.
 5. Execute o arquivo `powercast_vision.py` com o ambiente ativado.
-
----
-
-## :tv: Link do vídeo demonstrativo
-
-> 📽️ Em breve será adicionado aqui.
 
 ---
 
